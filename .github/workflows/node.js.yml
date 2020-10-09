@@ -37,7 +37,17 @@ jobs:
           yarn workspaces foreach --include "with-javascript" run build-react-scripts
           yarn workspaces foreach --include "with-typescript" run build-react-scripts
 
+      - name: Test create-react-app examples using react-scripts
+        run: |
+          yarn workspaces foreach --include "with-javascript" run test-react-scripts
+          yarn workspaces foreach --include "with-typescript" run test-react-scripts
+
       - name: Compile create-react-app examples using craco
         run: |
           yarn workspaces foreach --include "with-javascript" run build
           yarn workspaces foreach --include "with-typescript" run build
+
+      - name: Test create-react-app examples using craco
+        run: |
+          yarn workspaces foreach --include "with-javascript" run test
+          yarn workspaces foreach --include "with-typescript" run test
