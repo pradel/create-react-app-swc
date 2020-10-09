@@ -1,7 +1,7 @@
 {
   "name": "craco-swc",
   "version": "0.1.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": "https://github.com/pradel/craco-swc.git",
   "author": "Leo Pradel <pradel.leo@gmail.com>",
   "license": "MIT",
