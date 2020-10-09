@@ -1,75 +1,27 @@
-# 🚀 craco-swc 🚀
+# 🚀 create-react-app-swc 🚀
 
 Use [swc](https://swc.rs/) in your [create-react-app](https://create-react-app.dev/) for faster compilation, development and tests.
 
 ## Features
 
+- javascript / typescript support
 - Replace babel-loader with swc during development
 - Replace babel-loader with swc for faster build time
 - Use swc when running jest
 
-## Installation
+## FAQ
 
-Run the following command to install `craco-swc` in your project:
+### Why is it faster?
 
-```sh
-yarn add --dev craco-swc @craco/craco
+Internally create-react-app use babel to compile the javascript / typescript files of your application. By using craco-swc, you use the [swc](https://swc.rs/) compiler to compile your app instead of babel. swc is a super fast javascript / typescript compiler written in Rust.
 
-# OR
+### What is craco and why do I need it?
 
-npm install --save-dev craco-swc @craco/craco
-```
+[craco](https://github.com/gsoft-inc/craco) (C**C**reate **R**eact **A**pp **C**onfiguration **O**verride) is an easy and comprehensible configuration layer for create-react-app. By using craco you can customise the create-react-app configuration without ejecting.
 
-## Usage
+## Getting started
 
-Add this configuration to your `craco.config.js` configuration file:
-
-```js
-// craco.config.js
-const cracoSwcPlugin = require("craco-swc");
-
-module.exports = {
-  plugins: [{ plugin: cracoSwcPlugin }],
-};
-```
-
-## Configuration
-
-If your project contains a `.swcrc` file, it will be used by the `swc` loader configuration.
-Take a look at https://swc.rs/docs/configuring-swc#jsc to see the list of available options.
-
-You can also configure the options of the plugin by passing an `options` object.
-
-- `swcLoaderOptions`: customise the options passed down to the `swc` loader. _Note: This will be used only by webpack_
-
-For example add this configuration to your `craco.config.js` configuration file:
-
-```js
-// craco.config.js
-const cracoSwcPlugin = require("craco-swc");
-
-module.exports = {
-  plugins: [
-    {
-      plugin: cracoSwcPlugin,
-      options: {
-        swcLoaderOptions: {
-          jsc: {
-            externalHelpers: true,
-            target: "es2015",
-            parser: {
-              syntax: "ecmascript",
-              jsx: true,
-              dynamicImport: true,
-              exportDefaultFrom: true,
-            },
-          },
-        },
-      },
-    },
-  ],
-};
-```
+TODO point to blog post
 
 ## License
 
