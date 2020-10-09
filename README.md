@@ -29,9 +29,9 @@ module.exports = {
 
 ## Configuration
 
-You can configure the options of the plugin by passing an `option` object.
+You can configure the options of the plugin by passing an `options` object.
 
-- `TODO`
+- `swcLoaderOptions`: customise the options passed down to the swc loader.
 
 For example add this configuration to your `craco.config.js` configuration file:
 
@@ -40,7 +40,26 @@ For example add this configuration to your `craco.config.js` configuration file:
 const cracoSwcPlugin = require("craco-swc");
 
 module.exports = {
-  plugins: [{ plugin: cracoSwcPlugin, options: {} }],
+  plugins: [
+    {
+      plugin: cracoSwcPlugin,
+      options: {
+        swcLoaderOptions: {
+          // Take a look at https://swc.rs/docs/configuring-swc#jsc to see the list of available options
+          jsc: {
+            externalHelpers: true,
+            target: "es2015",
+            parser: {
+              syntax: "ecmascript",
+              jsx: true,
+              dynamicImport: true,
+              exportDefaultFrom: true,
+            },
+          },
+        },
+      },
+    },
+  ],
 };
 ```
 

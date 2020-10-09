@@ -7,9 +7,8 @@ module.exports = {
    */
   overrideWebpackConfig: ({
     webpackConfig,
-    cracoConfig,
     pluginOptions,
-    context: { env, paths },
+    context: { paths },
   }) => {
     const useTypeScript = fs.existsSync(paths.appTsConfig);
 
@@ -18,16 +17,18 @@ module.exports = {
       test: /\.(js|mjs|jsx|ts|tsx)$/,
       include: paths.appSrc,
       loader: require.resolve("swc-loader"),
-      options: {
-        jsc: {
-          externalHelpers: true,
-          target: "es2015",
-          parser: {
-            syntax: useTypeScript ? "typescript" : "ecmascript",
-            jsx: true,
+      options: pluginOptions.swcLoaderOptions
+        ? pluginOptions.swcLoaderOptions
+        : {
+            jsc: {
+              externalHelpers: true,
+              target: "es2015",
+              parser: {
+                syntax: useTypeScript ? "typescript" : "ecmascript",
+                jsx: true,
+              },
+            },
           },
-        },
-      },
     });
 
     // remove the babel loaders
