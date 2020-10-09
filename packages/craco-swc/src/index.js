@@ -24,6 +24,7 @@ module.exports = {
           parser: {
             syntax: useTypeScript ? "typescript" : "ecmascript",
             jsx: true,
+            externalHelpers: true,
           },
         },
       },
