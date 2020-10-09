@@ -2,6 +2,12 @@
 
 Use [swc](https://swc.rs/) with [create-react-app](https://create-react-app.dev/) for faster compilation 🚀.
 
+## Features
+
+- Replace babel-loader with swc during development
+- Replace babel-loader with swc for faster build time
+- Use swc when running jest
+
 ## Installation
 
 Run the following command to install `craco-swc` in your project:

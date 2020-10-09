@@ -48,7 +48,7 @@ module.exports = {
   }) => {
     // Replace babel transform with swc
     const key = Object.keys(jestConfig.transform)[0];
-    jestConfig.transform[key] = ["@swc/jest"];
+    jestConfig.transform[key] = [require.resolve("@swc/jest")];
 
     return jestConfig;
   },
