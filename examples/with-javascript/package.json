@@ -13,9 +13,12 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "start-react-scripts": "react-scripts start",
+    "build": "craco build",
+    "build-react-scripts": "react-scripts build",
+    "test": "craco test",
+    "test-react-scripts": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
