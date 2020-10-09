@@ -33,4 +33,6 @@ jobs:
       - run: yarn install --immutable
 
       - name: Compile create-react-app examples using react-scripts
-        run: yarn workspaces foreach --include "with-*" run build
+        run: |
+          yarn workspaces foreach --include "with-javascript" run build
+          yarn workspaces foreach --include "with-typescript" run build
