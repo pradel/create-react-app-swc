@@ -34,5 +34,5 @@ jobs:
 
       - name: Compile create-react-app examples using react-scripts
         run: |
-          yarn workspaces foreach --include "with-javascript" run build
-          yarn workspaces foreach --include "with-typescript" run build
+          yarn workspaces foreach --include "with-javascript" run react-scripts build
+          yarn workspaces foreach --include "with-typescript" run react-scripts build
