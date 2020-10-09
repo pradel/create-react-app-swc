@@ -20,11 +20,11 @@ module.exports = {
       loader: require.resolve("swc-loader"),
       options: {
         jsc: {
+          externalHelpers: true,
           target: "es2015",
           parser: {
             syntax: useTypeScript ? "typescript" : "ecmascript",
             jsx: true,
-            externalHelpers: true,
           },
         },
       },
