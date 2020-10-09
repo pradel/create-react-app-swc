@@ -1,6 +1,6 @@
-# craco-swc
+# 🚀 craco-swc 🚀
 
-Use [swc](https://swc.rs/) with [create-react-app](https://create-react-app.dev/) for faster compilation 🚀.
+Use [swc](https://swc.rs/) with [create-react-app](https://create-react-app.dev/) for faster compilation.
 
 ## Features
 
