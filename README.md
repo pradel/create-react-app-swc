@@ -9,6 +9,10 @@ Use [swc](https://swc.rs/) in your [create-react-app](https://create-react-app.d
 - Replace babel-loader with swc for faster build time
 - Use swc when running jest
 
+## Getting started
+
+TODO point to blog post
+
 ## FAQ
 
 ### Why is it faster?
@@ -18,10 +22,6 @@ Internally create-react-app use babel to compile the javascript / typescript fil
 ### What is craco and why do I need it?
 
 [craco](https://github.com/gsoft-inc/craco) (C**C**reate **R**eact **A**pp **C**onfiguration **O**verride) is an easy and comprehensible configuration layer for create-react-app. By using craco you can customise the create-react-app configuration without ejecting.
-
-## Getting started
-
-TODO point to blog post
 
 ## License
 
