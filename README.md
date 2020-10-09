@@ -35,9 +35,12 @@ module.exports = {
 
 ## Configuration
 
-You can configure the options of the plugin by passing an `options` object.
+If your project contains a `.swcrc` file, it will be used by the `swc` loader configuration.
+Take a look at https://swc.rs/docs/configuring-swc#jsc to see the list of available options.
 
-- `swcLoaderOptions`: customise the options passed down to the swc loader.
+You can also configure the options of the plugin by passing an `options` object.
+
+- `swcLoaderOptions`: customise the options passed down to the `swc` loader. _Note: This will be used only by webpack_
 
 For example add this configuration to your `craco.config.js` configuration file:
 
@@ -51,7 +54,6 @@ module.exports = {
       plugin: cracoSwcPlugin,
       options: {
         swcLoaderOptions: {
-          // Take a look at https://swc.rs/docs/configuring-swc#jsc to see the list of available options
           jsc: {
             externalHelpers: true,
             target: "es2015",
