@@ -17,18 +17,19 @@ module.exports = {
       test: /\.(js|mjs|jsx|ts|tsx)$/,
       include: paths.appSrc,
       loader: require.resolve("swc-loader"),
-      options: pluginOptions.swcLoaderOptions
-        ? pluginOptions.swcLoaderOptions
-        : {
-            jsc: {
-              externalHelpers: true,
-              target: "es2015",
-              parser: {
-                syntax: useTypeScript ? "typescript" : "ecmascript",
-                jsx: true,
+      options:
+        pluginOptions && pluginOptions.swcLoaderOptions
+          ? pluginOptions.swcLoaderOptions
+          : {
+              jsc: {
+                externalHelpers: true,
+                target: "es2015",
+                parser: {
+                  syntax: useTypeScript ? "typescript" : "ecmascript",
+                  jsx: true,
+                },
               },
             },
-          },
     });
 
     // remove the babel loaders
