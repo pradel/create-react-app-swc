@@ -23,6 +23,11 @@ Internally create-react-app use babel to compile the javascript / typescript fil
 
 [craco](https://github.com/gsoft-inc/craco) (**C**reate **R**eact **A**pp **C**onfiguration **O**verride) is an easy and comprehensible configuration layer for create-react-app. By using craco you can customise the create-react-app configuration without ejecting.
 
+### What are the differences with create-react-app?
+
+- Since babel is not used, you won't be able to use the babel plugins (eg: `babel-plugin-macros`, `babel-plugin-transform-react-remove-prop-types`, ...).
+- No flow support
+
 ## License
 
 MIT © [Léo Pradel](https://www.leopradel.com/)
