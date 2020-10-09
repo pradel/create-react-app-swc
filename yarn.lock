@@ -1820,6 +1820,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@node-rs/helper@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "@node-rs/helper@npm:0.4.0"
+  dependencies:
+    tslib: ^2.0.1
+  checksum: f98033ed82c722c923aa78fa647f410bf3444634b12f9a870d00e4227c3f0a72fed9b9f2b70dd13b8f5fda5235b38f7b76e94508c6eb14237b109a75e864ad11
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.stat@npm:^1.1.2":
   version: 1.1.3
   resolution: "@nodelib/fs.stat@npm:1.1.3"
@@ -1962,6 +1971,46 @@ __metadata:
     "@svgr/plugin-svgo": ^4.3.1
     loader-utils: ^1.2.3
   checksum: 160f2805c5c1173c71908c26b03f3f832ba8024c1146e2945b94e94d85c6874a4b521f3417d4542d45141f29f4d1fbea07b54960d03c23aae46730c27380e278
+  languageName: node
+  linkType: hard
+
+"@swc/core-darwin@npm:^1.2.36":
+  version: 1.2.36
+  resolution: "@swc/core-darwin@npm:1.2.36"
+  checksum: 0d256c4253cf91c8223f0fae6c0a3556879c03c08b7ba2f48ef030d35258a81fcd19701916fff6d88056c60f006fe3ab13dad6712e02bfcba188dc4f6140610e
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux@npm:^1.2.36":
+  version: 1.2.36
+  resolution: "@swc/core-linux@npm:1.2.36"
+  checksum: 6bbc62351133116151821e1204f8d5f76aa857bad7aa0caebfe0cf62f133b3675c2bbae10a5fe66b534060e3485c044ab3cb8de9ef29628abd6deec642d34e27
+  languageName: node
+  linkType: hard
+
+"@swc/core-win32@npm:^1.2.36":
+  version: 1.2.36
+  resolution: "@swc/core-win32@npm:1.2.36"
+  checksum: 5f971ecbb5bd76577496ab91f6a7a14df264f019ba90dd3db617c2e3fe4e53fc24415f34009ae6e7ee2f0e05912f1c61bb20f3cc42eed88d99ccd2c9bb1adac4
+  languageName: node
+  linkType: hard
+
+"@swc/core@npm:^1.1.48, @swc/core@npm:^1.2.36":
+  version: 1.2.36
+  resolution: "@swc/core@npm:1.2.36"
+  dependencies:
+    "@node-rs/helper": ^0.4.0
+    "@swc/core-darwin": ^1.2.36
+    "@swc/core-linux": ^1.2.36
+    "@swc/core-win32": ^1.2.36
+  dependenciesMeta:
+    "@swc/core-darwin":
+      optional: true
+    "@swc/core-linux":
+      optional: true
+    "@swc/core-win32":
+      optional: true
+  checksum: e849542a307a3c10878441790324e2062396568339ad9bfbb47f66df1797a5a1187b2b1aa57653daacda328bd0835b71f606b8adc77cf4b445201efe5df2b2e4
   languageName: node
   linkType: hard
 
@@ -4348,7 +4397,9 @@ __metadata:
   resolution: "craco-swc@workspace:packages/craco-swc"
   dependencies:
     "@craco/craco": 5.7.0
+    "@swc/core": ^1.2.36
     react-scripts: 3.4.3
+    swc-loader: ^0.1.12
   peerDependencies:
     "@craco/craco": ^5.5.0
     react-scripts: ^3.3.0
@@ -8628,6 +8679,17 @@ fsevents@^1.2.7:
     emojis-list: ^3.0.0
     json5: ^1.0.1
   checksum: 9fd690e57ad78d32ff2942383b4a7a175eba575280ba5aca3b4d03183fec34aa0db314f49bd3301adf7e60b02471644161bf53149e8f2d18fd6a52627e95a927
+  languageName: node
+  linkType: hard
+
+"loader-utils@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "loader-utils@npm:2.0.0"
+  dependencies:
+    big.js: ^5.2.2
+    emojis-list: ^3.0.0
+    json5: ^2.1.2
+  checksum: a1c2e48781e1501e126a32c39bc1fb1a7e2f02bd99e5aeb8853ddaf3c121fffefcc4579367f97ca6890b58369e571af1c9ec82e4e20db238d560ab359ff25c33
   languageName: node
   linkType: hard
 
@@ -13083,6 +13145,19 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
+"swc-loader@npm:^0.1.12":
+  version: 0.1.12
+  resolution: "swc-loader@npm:0.1.12"
+  dependencies:
+    "@swc/core": ^1.1.48
+    loader-utils: ^2.0.0
+  peerDependencies:
+    "@swc/core": ^1.1.48
+    webpack: ">=2"
+  checksum: b66cab27d7a6d5e61484dbd00f9e4e9ec487a31c10b6c022179f2bdf0cae07f290bb8b41392107583b254b58e7bf8398a00e3065e76be635024536d281760534
+  languageName: node
+  linkType: hard
+
 "symbol-tree@npm:^3.2.2":
   version: 3.2.4
   resolution: "symbol-tree@npm:3.2.4"
@@ -13350,6 +13425,13 @@ resolve@1.1.7:
   version: 1.14.0
   resolution: "tslib@npm:1.14.0"
   checksum: dfbb39a7f241f952ada0f1b148ad88b736e2030a2d44de2aad0723ac7527a3fdda1f710859e66495fd46659cf227727f74d6a10410d5562b7b23dbdc92e66c98
+  languageName: node
+  linkType: hard
+
+"tslib@npm:^2.0.1":
+  version: 2.0.2
+  resolution: "tslib@npm:2.0.2"
+  checksum: a6a3a3eda60d8882631d872b94c7af35baf40a224a08c04866ed611e4d277ba4893dd49c2b8f33c85dd904ff55d881baeed248bfdd69c4cf33e384fd86f0dd4f
   languageName: node
   linkType: hard
 
