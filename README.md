@@ -21,7 +21,7 @@ Internally create-react-app use babel to compile the javascript / typescript fil
 
 ### What is craco and why do I need it?
 
-[craco](https://github.com/gsoft-inc/craco) (C**C**reate **R**eact **A**pp **C**onfiguration **O**verride) is an easy and comprehensible configuration layer for create-react-app. By using craco you can customise the create-react-app configuration without ejecting.
+[craco](https://github.com/gsoft-inc/craco) (**C**reate **R**eact **A**pp **C**onfiguration **O**verride) is an easy and comprehensible configuration layer for create-react-app. By using craco you can customise the create-react-app configuration without ejecting.
 
 ## License
 
