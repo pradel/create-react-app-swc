@@ -14143,6 +14143,7 @@ typescript@~3.7.2:
   version: 0.0.0-use.local
   resolution: "with-javascript@workspace:examples/with-javascript"
   dependencies:
+    "@craco/craco": 5.7.0
     "@testing-library/jest-dom": ^4.2.4
     "@testing-library/react": ^9.3.2
     "@testing-library/user-event": ^7.1.2
@@ -14157,6 +14158,7 @@ typescript@~3.7.2:
   version: 0.0.0-use.local
   resolution: "with-typescript@workspace:examples/with-typescript"
   dependencies:
+    "@craco/craco": 5.7.0
     "@testing-library/jest-dom": ^4.2.4
     "@testing-library/react": ^9.3.2
     "@testing-library/user-event": ^7.1.2

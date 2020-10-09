@@ -31,3 +31,6 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - run: yarn install --immutable
+
+      - name: Compile create-react-app examples using react-scripts
+        run: yarn workspaces foreach --include "with-*" run build
