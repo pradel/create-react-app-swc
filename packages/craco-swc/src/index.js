@@ -1,3 +1,4 @@
+const path = require("path");
 const fs = require("fs");
 const { loaderByName, removeLoaders, addAfterLoader } = require("@craco/craco");
 
@@ -11,6 +12,8 @@ module.exports = {
     context: { paths },
   }) => {
     const useTypeScript = fs.existsSync(paths.appTsConfig);
+    const appSwcConfig = path.resolve(paths.appPath, ".swcrc");
+    const useSwcConfig = fs.existsSync(appSwcConfig);
 
     // add swc-loader
     addAfterLoader(webpackConfig, loaderByName("babel-loader"), {
@@ -20,11 +23,16 @@ module.exports = {
       options:
         pluginOptions && pluginOptions.swcLoaderOptions
           ? pluginOptions.swcLoaderOptions
+          : useSwcConfig
+          ? // If there is an .swcrc file at the root of the project we pass undefined
+            // That way swc will use the .swcrc config
+            undefined
           : {
               jsc: {
                 externalHelpers: true,
                 target: "es2015",
                 parser: {
+                  // If user is using typescript we need to use the typescript parser
                   syntax: useTypeScript ? "typescript" : "ecmascript",
                   jsx: true,
                 },

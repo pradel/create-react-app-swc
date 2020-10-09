@@ -1,5 +1,7 @@
 {
   "jsc": {
+    "externalHelpers": true,
+    "target": "es2015",
     "parser": {
       "syntax": "ecmascript",
       "jsx": true
