@@ -1,6 +1,6 @@
 {
   "name": "with-javascript",
-  "version": "0.1.0",
+  "version": "0.0.3",
   "private": true,
   "dependencies": {
     "@craco/craco": "5.7.0",
