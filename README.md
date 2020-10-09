@@ -7,7 +7,7 @@ Use [swc](https://swc.rs/) in your [create-react-app](https://create-react-app.d
 - javascript / typescript support
 - Replace babel-loader with swc during development
 - Replace babel-loader with swc for faster build time
-- Use swc when running jest
+- Replace babel with swc when running jest tests
 
 ## Getting started
 
