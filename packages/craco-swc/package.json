@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@swc/core": "^1.2.36",
+    "@swc/jest": "^0.1.2",
     "swc-loader": "^0.1.12"
   },
   "devDependencies": {

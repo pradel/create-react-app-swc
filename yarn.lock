@@ -1995,7 +1995,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core@npm:^1.1.48, @swc/core@npm:^1.2.36":
+"@swc/core@npm:^1.1.48, @swc/core@npm:^1.2.30, @swc/core@npm:^1.2.36":
   version: 1.2.36
   resolution: "@swc/core@npm:1.2.36"
   dependencies:
@@ -2011,6 +2011,15 @@ __metadata:
     "@swc/core-win32":
       optional: true
   checksum: e849542a307a3c10878441790324e2062396568339ad9bfbb47f66df1797a5a1187b2b1aa57653daacda328bd0835b71f606b8adc77cf4b445201efe5df2b2e4
+  languageName: node
+  linkType: hard
+
+"@swc/jest@npm:^0.1.2":
+  version: 0.1.2
+  resolution: "@swc/jest@npm:0.1.2"
+  dependencies:
+    "@swc/core": ^1.2.30
+  checksum: 716e6179e6a561397f3681e4d8dee248fbed6c2a8f743a3b4fb0879aac3505a70ee6fe00bc8bda6b87aefa229c15a0bd8db3b0c23cfdae4caba11b523e154412
   languageName: node
   linkType: hard
 
@@ -4398,6 +4407,7 @@ __metadata:
   dependencies:
     "@craco/craco": 5.7.0
     "@swc/core": ^1.2.36
+    "@swc/jest": ^0.1.2
     react-scripts: 3.4.3
     swc-loader: ^0.1.12
   peerDependencies:
