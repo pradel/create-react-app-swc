@@ -11,7 +11,7 @@ Use [swc](https://swc.rs/) in your [create-react-app](https://create-react-app.d
 
 ## Getting started
 
-TODO point to blog post
+Follow the [guide](https://github.com/pradel/create-react-app-swc/blob/main/packages/craco-swc/README.md) to setup your project.
 
 ## FAQ
 
