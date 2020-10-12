@@ -33,6 +33,21 @@ module.exports = {
 };
 ```
 
+To use `craco` instead of `react-scripts` to manage our application, edit the `scripts` section of your `package.json`.
+
+```diff
+/* package.json */
+
+"scripts": {
+-   "start": "react-scripts start",
++   "start": "craco start",
+-   "build": "react-scripts build",
++   "build": "craco build"
+-   "test": "react-scripts test",
++   "test": "craco test"
+}
+```
+
 ## Configuration
 
 If your project contains a `.swcrc` file, it will be used by the `swc` loader configuration.
