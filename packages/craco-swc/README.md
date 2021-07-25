@@ -26,7 +26,7 @@ Add this configuration to your `craco.config.js` configuration file:
 
 ```js
 // craco.config.js
-const CracoSwcPlugin = require("craco-swc");
+const CracoSwcPlugin = require('craco-swc');
 
 module.exports = {
   plugins: [{ plugin: CracoSwcPlugin }],
@@ -61,7 +61,7 @@ For example add this configuration to your `craco.config.js` configuration file:
 
 ```js
 // craco.config.js
-const CracoSwcPlugin = require("craco-swc");
+const CracoSwcPlugin = require('craco-swc');
 
 module.exports = {
   plugins: [
@@ -71,9 +71,9 @@ module.exports = {
         swcLoaderOptions: {
           jsc: {
             externalHelpers: true,
-            target: "es2015",
+            target: 'es2015',
             parser: {
-              syntax: "ecmascript",
+              syntax: 'ecmascript',
               jsx: true,
               dynamicImport: true,
               exportDefaultFrom: true,

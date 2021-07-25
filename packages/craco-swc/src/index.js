@@ -1,6 +1,6 @@
-const path = require("path");
-const fs = require("fs");
-const { loaderByName, removeLoaders, addAfterLoader } = require("@craco/craco");
+const path = require('path');
+const fs = require('fs');
+const { loaderByName, removeLoaders, addAfterLoader } = require('@craco/craco');
 
 module.exports = {
   /**
@@ -12,14 +12,14 @@ module.exports = {
     context: { paths },
   }) => {
     const useTypeScript = fs.existsSync(paths.appTsConfig);
-    const appSwcConfig = path.resolve(paths.appPath, ".swcrc");
+    const appSwcConfig = path.resolve(paths.appPath, '.swcrc');
     const useSwcConfig = fs.existsSync(appSwcConfig);
 
     // add swc-loader
-    addAfterLoader(webpackConfig, loaderByName("babel-loader"), {
+    addAfterLoader(webpackConfig, loaderByName('babel-loader'), {
       test: /\.(js|mjs|jsx|ts|tsx)$/,
       include: paths.appSrc,
-      loader: require.resolve("swc-loader"),
+      loader: require.resolve('swc-loader'),
       options:
         pluginOptions && pluginOptions.swcLoaderOptions
           ? pluginOptions.swcLoaderOptions
@@ -30,19 +30,22 @@ module.exports = {
           : {
               jsc: {
                 externalHelpers: true,
-                target: "es2015",
-                parser: {
-                  // If user is using typescript we need to use the typescript parser
-                  syntax: useTypeScript ? "typescript" : "ecmascript",
-                  jsx: useTypeScript ? false : true,
-                  tsx: useTypeScript ? true : false,
-                },
+                target: 'es2015',
+                parser: useTypeScript
+                  ? {
+                      syntax: 'typescript',
+                      tsx: true,
+                    }
+                  : {
+                      syntax: 'ecmascript',
+                      jsx: true,
+                    },
               },
             },
     });
 
     // remove the babel loaders
-    removeLoaders(webpackConfig, loaderByName("babel-loader"));
+    removeLoaders(webpackConfig, loaderByName('babel-loader'));
 
     return webpackConfig;
   },
@@ -58,7 +61,7 @@ module.exports = {
     // Replace babel transform with swc
     const key = Object.keys(jestConfig.transform)[0];
     // TODO find a way to pass options directly to the plugin without having to use a .swcrc
-    jestConfig.transform[key] = [require.resolve("@swc/jest")];
+    jestConfig.transform[key] = [require.resolve('@swc/jest')];
 
     return jestConfig;
   },
