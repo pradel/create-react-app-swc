@@ -35,10 +35,12 @@ module.exports = {
                   ? {
                       syntax: 'typescript',
                       tsx: true,
+                      dynamicImport: true,
                     }
                   : {
                       syntax: 'ecmascript',
                       jsx: true,
+                      dynamicImport: true,
                     },
               },
             },
