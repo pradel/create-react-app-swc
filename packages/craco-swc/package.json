@@ -1,6 +1,6 @@
 {
   "name": "craco-swc",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "src/index.js",
   "repository": "https://github.com/pradel/create-react-app-swc.git",
   "author": "Leo Pradel <pradel.leo@gmail.com>",
