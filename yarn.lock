@@ -2367,7 +2367,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core@npm:^1.2.30, @swc/core@npm:^1.2.52, @swc/core@npm:^1.2.66":
+"@swc/core@npm:^1.2.30, @swc/core@npm:^1.2.36, @swc/core@npm:^1.2.52, @swc/core@npm:^1.2.66":
   version: 1.2.66
   resolution: "@swc/core@npm:1.2.66"
   dependencies:
@@ -2420,7 +2420,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/jest@npm:^0.1.4":
+"@swc/jest@npm:^0.1.2, @swc/jest@npm:^0.1.4":
   version: 0.1.4
   resolution: "@swc/jest@npm:0.1.4"
   dependencies:
@@ -5338,7 +5338,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"craco-swc@0.1.0, craco-swc@workspace:packages/craco-swc":
+"craco-swc@npm:0.1.0":
+  version: 0.1.0
+  resolution: "craco-swc@npm:0.1.0"
+  dependencies:
+    "@swc/core": ^1.2.36
+    "@swc/jest": ^0.1.2
+    swc-loader: ^0.1.12
+  peerDependencies:
+    "@craco/craco": ^5.5.0
+    react-scripts: ^3.3.0
+  checksum: 8231a5d6fc23e22d6e81aae2e209b9bf6e1e5327ba6c3c79e35f315435b6094756073df05dadf89e91e8a2ffe7f8b5e292adc7075018f7a42827d9cd16992c51
+  languageName: node
+  linkType: hard
+
+"craco-swc@workspace:packages/craco-swc":
   version: 0.0.0-use.local
   resolution: "craco-swc@workspace:packages/craco-swc"
   dependencies:
@@ -14692,7 +14706,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"swc-loader@npm:^0.1.14":
+"swc-loader@npm:^0.1.12, swc-loader@npm:^0.1.14":
   version: 0.1.14
   resolution: "swc-loader@npm:0.1.14"
   dependencies:
