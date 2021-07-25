@@ -66,8 +66,6 @@ module.exports = {
     jestConfig.transform[key] = [
       require.resolve('@swc/jest', {
         jsc: {
-          externalHelpers: true,
-          target: 'es2015',
           parser: useTypeScript
             ? {
                 syntax: 'typescript',
