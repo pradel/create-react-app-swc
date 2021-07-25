@@ -10,7 +10,7 @@
   ],
   "peerDependencies": {
     "@craco/craco": "^5.5.0 || ^6.0.0",
-    "react-scripts": "^3.3.0"
+    "react-scripts": "^3.3.0 || ^4.0.0"
   },
   "dependencies": {
     "@swc/core": "^1.2.66",
@@ -19,6 +19,6 @@
   },
   "devDependencies": {
     "@craco/craco": "6.2.0",
-    "react-scripts": "3.4.3"
+    "react-scripts": "4.0.3"
   }
 }
