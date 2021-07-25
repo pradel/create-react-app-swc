@@ -61,7 +61,23 @@ module.exports = {
     // Replace babel transform with swc
     const key = Object.keys(jestConfig.transform)[0];
     // TODO find a way to pass options directly to the plugin without having to use a .swcrc
-    jestConfig.transform[key] = [require.resolve('@swc/jest')];
+    jestConfig.transform[key] = [
+      require.resolve('@swc/jest', {
+        jsc: {
+          externalHelpers: true,
+          target: 'es2015',
+          parser: useTypeScript
+            ? {
+                syntax: 'typescript',
+                tsx: true,
+              }
+            : {
+                syntax: 'ecmascript',
+                jsx: true,
+              },
+        },
+      }),
+    ];
 
     return jestConfig;
   },
