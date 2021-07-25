@@ -9,16 +9,17 @@
     "src"
   ],
   "peerDependencies": {
-    "@craco/craco": "^5.5.0",
-    "react-scripts": "^3.3.0"
+    "@craco/craco": "^5.5.0 || ^6.0.0",
+    "react-scripts": "^3.3.0 || ^4.0.0"
   },
   "dependencies": {
-    "@swc/core": "^1.2.36",
-    "@swc/jest": "^0.1.2",
-    "swc-loader": "^0.1.12"
+    "@swc/core": "^1.2.66",
+    "@swc/helpers": "^0.2.12",
+    "@swc/jest": "^0.1.4",
+    "swc-loader": "^0.1.14"
   },
   "devDependencies": {
-    "@craco/craco": "5.7.0",
-    "react-scripts": "3.4.3"
+    "@craco/craco": "6.2.0",
+    "react-scripts": "4.0.3"
   }
 }

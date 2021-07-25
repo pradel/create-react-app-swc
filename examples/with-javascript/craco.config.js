@@ -1,4 +1,4 @@
-const cracoSwcPlugin = require("craco-swc");
+const cracoSwcPlugin = require('craco-swc');
 
 module.exports = {
   plugins: [
