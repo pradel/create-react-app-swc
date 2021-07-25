@@ -1559,18 +1559,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@craco/craco@npm:5.7.0":
-  version: 5.7.0
-  resolution: "@craco/craco@npm:5.7.0"
+"@craco/craco@npm:6.2.0":
+  version: 6.2.0
+  resolution: "@craco/craco@npm:6.2.0"
   dependencies:
     cross-spawn: ^7.0.0
     lodash: ^4.17.15
+    semver: ^7.3.2
     webpack-merge: ^4.2.2
   peerDependencies:
-    react-scripts: "*"
+    react-scripts: ^4.0.0
   bin:
     craco: bin/craco.js
-  checksum: 558b8641e7e1c322c041ceab00b63201b7fb23d81e99cadba9c6de81261dab9e4a6cf76684dedc69d4a5c70ced18f1f4f1dd229b51efc8bbab73d05f92001563
+  checksum: 53ec93dbf18e54219ee079bfeb19c2aa0b7f89df02f073739d984ffc13f1727fec4ffb90ddb5ad8b103cf7cb87e29193a9212a74f5648c8e2e76dc8655984e1e
   languageName: node
   linkType: hard
 
@@ -4551,7 +4552,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "craco-swc@workspace:packages/craco-swc"
   dependencies:
-    "@craco/craco": 5.7.0
+    "@craco/craco": 6.2.0
     "@swc/core": ^1.2.66
     "@swc/jest": ^0.1.4
     react-scripts: 3.4.3
@@ -14299,7 +14300,7 @@ typescript@~3.7.2:
   version: 0.0.0-use.local
   resolution: "with-javascript@workspace:examples/with-javascript"
   dependencies:
-    "@craco/craco": 5.7.0
+    "@craco/craco": 6.2.0
     "@testing-library/jest-dom": ^4.2.4
     "@testing-library/react": ^9.3.2
     "@testing-library/user-event": ^7.1.2
@@ -14314,7 +14315,7 @@ typescript@~3.7.2:
   version: 0.0.0-use.local
   resolution: "with-typescript@workspace:examples/with-typescript"
   dependencies:
-    "@craco/craco": 5.7.0
+    "@craco/craco": 6.2.0
     "@testing-library/jest-dom": ^4.2.4
     "@testing-library/react": ^9.3.2
     "@testing-library/user-event": ^7.1.2

@@ -18,7 +18,7 @@
     "swc-loader": "^0.1.14"
   },
   "devDependencies": {
-    "@craco/craco": "5.7.0",
+    "@craco/craco": "6.2.0",
     "react-scripts": "3.4.3"
   }
 }
