@@ -34,7 +34,8 @@ module.exports = {
                 parser: {
                   // If user is using typescript we need to use the typescript parser
                   syntax: useTypeScript ? "typescript" : "ecmascript",
-                  jsx: true,
+                  jsx: useTypeScript ? false : true,
+                  tsx: useTypeScript ? true : false,
                 },
               },
             },
