@@ -2406,6 +2406,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@swc/helpers@npm:^0.2.12":
+  version: 0.2.12
+  resolution: "@swc/helpers@npm:0.2.12"
+  checksum: 8898fdd5ce38c12bb3f168800448c28c2ad9182d28fb303ef2bba3eb51028bbfa00592406de4619ecaad694f076af730065a6008b65a4af64a955d78a5e9dd1a
+  languageName: node
+  linkType: hard
+
 "@swc/jest@npm:^0.1.4":
   version: 0.1.4
   resolution: "@swc/jest@npm:0.1.4"
@@ -5031,6 +5038,7 @@ __metadata:
   dependencies:
     "@craco/craco": 6.2.0
     "@swc/core": ^1.2.66
+    "@swc/helpers": ^0.2.12
     "@swc/jest": ^0.1.4
     react-scripts: 4.0.3
     swc-loader: ^0.1.14
