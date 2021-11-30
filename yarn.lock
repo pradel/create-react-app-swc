@@ -2419,7 +2419,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core@npm:^1.2.114, @swc/core@npm:^1.2.36":
+"@swc/core@npm:^1.2.114":
   version: 1.2.114
   resolution: "@swc/core@npm:1.2.114"
   dependencies:
@@ -2469,13 +2469,6 @@ __metadata:
   version: 0.2.14
   resolution: "@swc/helpers@npm:0.2.14"
   checksum: c7b718924ee20d64bd784b64fae9a0e228f1a7a0474e8f772e7ff89282f3e2df6a2c1325da3b98a001b1a1823c93a378886320b9ce0761dcdbcb9f76d887de45
-  languageName: node
-  linkType: hard
-
-"@swc/jest@npm:^0.1.2":
-  version: 0.1.5
-  resolution: "@swc/jest@npm:0.1.5"
-  checksum: 0a7076a7ac0655ad45db5609d7c145010d60ea93e7fcd9ccb88e7f586197d9dcf1724d39bbdabb05cbed9f094cbfe0f93ffa0b2e5d7524e6d450b652291980f1
   languageName: node
   linkType: hard
 
@@ -5406,20 +5399,6 @@ __metadata:
     path-type: ^4.0.0
     yaml: ^1.10.0
   checksum: 4be63e7117955fd88333d7460e4c466a90f556df6ef34efd59034d2463484e339666c41f02b523d574a797ec61f4a91918c5b89a316db2ea2f834e0d2d09465b
-  languageName: node
-  linkType: hard
-
-"craco-swc@npm:0.1.0":
-  version: 0.1.0
-  resolution: "craco-swc@npm:0.1.0"
-  dependencies:
-    "@swc/core": ^1.2.36
-    "@swc/jest": ^0.1.2
-    swc-loader: ^0.1.12
-  peerDependencies:
-    "@craco/craco": ^5.5.0
-    react-scripts: ^3.3.0
-  checksum: f7377a093e99be99279cce635177109eb666f913ba87c2a37633c24240a1f95d37c606c09a69c864d386df158640f621a9e8f7ccbfdd9e1897182035360ed33d
   languageName: node
   linkType: hard
 
@@ -14882,7 +14861,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"swc-loader@npm:^0.1.12, swc-loader@npm:^0.1.15":
+"swc-loader@npm:^0.1.15":
   version: 0.1.15
   resolution: "swc-loader@npm:0.1.15"
   dependencies:
@@ -16072,7 +16051,7 @@ __metadata:
     "@testing-library/jest-dom": ^5.15.1
     "@testing-library/react": ^11.2.7
     "@testing-library/user-event": ^12.8.3
-    craco-swc: 0.1.0
+    craco-swc: "workspace:packages/craco-swc"
     react: ^17.0.2
     react-dom: ^17.0.2
     react-scripts: 4.0.3
@@ -16092,7 +16071,7 @@ __metadata:
     "@types/node": ^16.11.11
     "@types/react": ^17.0.37
     "@types/react-dom": ^17.0.11
-    craco-swc: 0.1.0
+    craco-swc: "workspace:packages/craco-swc"
     react: ^17.0.2
     react-dom: ^17.0.2
     react-scripts: 4.0.3
