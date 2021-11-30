@@ -1666,10 +1666,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@craco/craco@npm:6.2.0":
-  version: 6.2.0
-  resolution: "@craco/craco@npm:6.2.0"
+"@craco/craco@npm:6.4.2":
+  version: 6.4.2
+  resolution: "@craco/craco@npm:6.4.2"
   dependencies:
+    cosmiconfig: ^7.0.1
     cross-spawn: ^7.0.0
     lodash: ^4.17.15
     semver: ^7.3.2
@@ -1678,7 +1679,7 @@ __metadata:
     react-scripts: ^4.0.0
   bin:
     craco: bin/craco.js
-  checksum: 51fb534a3e1a3cefdf2722201d532457c47a58a93e19115ad9ae6ea731ee4cd468e4a63959e5f793cc320b87557b2ef5ead76b4af0df955075a8d37aae2bc26d
+  checksum: 376369ca9f42f19143facc3ed2187807169baf74cedb8587daac0749d2fcc03633940c1d7c20aa38a2329cfa60499c61812124b829820b609c2daa089f5697ac
   languageName: node
   linkType: hard
 
@@ -1850,6 +1851,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@jest/create-cache-key-function@npm:^27.3.1":
+  version: 27.4.2
+  resolution: "@jest/create-cache-key-function@npm:27.4.2"
+  dependencies:
+    "@jest/types": ^27.4.2
+  checksum: 46eeb4460798c6bba9da5bba6d07030012a9290ee6d2e3537e49110e57e6bcb118d9075a942ec3c1b1a2eebb50746d231bc9b15749980dd3817c41db3179c27a
+  languageName: node
+  linkType: hard
+
 "@jest/environment@npm:^26.6.0, @jest/environment@npm:^26.6.2":
   version: 26.6.2
   resolution: "@jest/environment@npm:26.6.2"
@@ -1992,6 +2002,19 @@ __metadata:
     "@types/yargs": ^15.0.0
     chalk: ^4.0.0
   checksum: a0bd3d2f22f26ddb23f41fddf6e6a30bf4fab2ce79ec1cb6ce6fdfaf90a72e00f4c71da91ec61e13db3b10c41de22cf49d07c57ff2b59171d64b29f909c1d8d6
+  languageName: node
+  linkType: hard
+
+"@jest/types@npm:^27.4.2":
+  version: 27.4.2
+  resolution: "@jest/types@npm:27.4.2"
+  dependencies:
+    "@types/istanbul-lib-coverage": ^2.0.0
+    "@types/istanbul-reports": ^3.0.0
+    "@types/node": "*"
+    "@types/yargs": ^16.0.0
+    chalk: ^4.0.0
+  checksum: 1191022023e32763063cc1c8b1143fa316fb05db2f9698280a7bdbafcabd989e5fd64f8eb875b8a2e54c53f25dba45ed2eea8ced394d9e484da0fda674cd17a5
   languageName: node
   linkType: hard
 
@@ -2283,10 +2306,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@swc/core-android-arm64@npm:^1.2.114":
+  version: 1.2.114
+  resolution: "@swc/core-android-arm64@npm:1.2.114"
+  conditions: os=android & cpu=arm64
+  languageName: node
+  linkType: hard
+
 "@swc/core-android-arm64@npm:^1.2.66":
   version: 1.2.66
   resolution: "@swc/core-android-arm64@npm:1.2.66"
   conditions: os=android & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@swc/core-darwin-arm64@npm:^1.2.114":
+  version: 1.2.114
+  resolution: "@swc/core-darwin-arm64@npm:1.2.114"
+  conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
@@ -2297,10 +2334,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@swc/core-darwin-x64@npm:^1.2.114":
+  version: 1.2.114
+  resolution: "@swc/core-darwin-x64@npm:1.2.114"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
 "@swc/core-darwin-x64@npm:^1.2.66":
   version: 1.2.66
   resolution: "@swc/core-darwin-x64@npm:1.2.66"
   conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@swc/core-freebsd-x64@npm:^1.2.114":
+  version: 1.2.114
+  resolution: "@swc/core-freebsd-x64@npm:1.2.114"
+  conditions: os=freebsd & cpu=x64
   languageName: node
   linkType: hard
 
@@ -2311,6 +2362,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@swc/core-linux-arm-gnueabihf@npm:^1.2.114":
+  version: 1.2.114
+  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.2.114"
+  conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
 "@swc/core-linux-arm-gnueabihf@npm:^1.2.66":
   version: 1.2.66
   resolution: "@swc/core-linux-arm-gnueabihf@npm:1.2.66"
@@ -2318,9 +2376,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@swc/core-linux-arm64-gnu@npm:^1.2.114":
+  version: 1.2.114
+  resolution: "@swc/core-linux-arm64-gnu@npm:1.2.114"
+  conditions: os=linux & cpu=arm64
+  languageName: node
+  linkType: hard
+
 "@swc/core-linux-arm64-gnu@npm:^1.2.66":
   version: 1.2.66
   resolution: "@swc/core-linux-arm64-gnu@npm:1.2.66"
+  conditions: os=linux & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-arm64-musl@npm:^1.2.114":
+  version: 1.2.114
+  resolution: "@swc/core-linux-arm64-musl@npm:1.2.114"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
@@ -2332,9 +2404,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@swc/core-linux-x64-gnu@npm:^1.2.114":
+  version: 1.2.114
+  resolution: "@swc/core-linux-x64-gnu@npm:1.2.114"
+  conditions: os=linux & cpu=x64
+  languageName: node
+  linkType: hard
+
 "@swc/core-linux-x64-gnu@npm:^1.2.66":
   version: 1.2.66
   resolution: "@swc/core-linux-x64-gnu@npm:1.2.66"
+  conditions: os=linux & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-x64-musl@npm:^1.2.114":
+  version: 1.2.114
+  resolution: "@swc/core-linux-x64-musl@npm:1.2.114"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
@@ -2346,10 +2432,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@swc/core-win32-arm64-msvc@npm:^1.2.114":
+  version: 1.2.114
+  resolution: "@swc/core-win32-arm64-msvc@npm:1.2.114"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
 "@swc/core-win32-arm64-msvc@npm:^1.2.66":
   version: 1.2.66
   resolution: "@swc/core-win32-arm64-msvc@npm:1.2.66"
   conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@swc/core-win32-ia32-msvc@npm:^1.2.114":
+  version: 1.2.114
+  resolution: "@swc/core-win32-ia32-msvc@npm:1.2.114"
+  conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
@@ -2360,6 +2460,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@swc/core-win32-x64-msvc@npm:^1.2.114":
+  version: 1.2.114
+  resolution: "@swc/core-win32-x64-msvc@npm:1.2.114"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
 "@swc/core-win32-x64-msvc@npm:^1.2.66":
   version: 1.2.66
   resolution: "@swc/core-win32-x64-msvc@npm:1.2.66"
@@ -2367,7 +2474,53 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core@npm:^1.2.30, @swc/core@npm:^1.2.36, @swc/core@npm:^1.2.52, @swc/core@npm:^1.2.66":
+"@swc/core@npm:^1.2.114":
+  version: 1.2.114
+  resolution: "@swc/core@npm:1.2.114"
+  dependencies:
+    "@node-rs/helper": ^1.0.0
+    "@swc/core-android-arm64": ^1.2.114
+    "@swc/core-darwin-arm64": ^1.2.114
+    "@swc/core-darwin-x64": ^1.2.114
+    "@swc/core-freebsd-x64": ^1.2.114
+    "@swc/core-linux-arm-gnueabihf": ^1.2.114
+    "@swc/core-linux-arm64-gnu": ^1.2.114
+    "@swc/core-linux-arm64-musl": ^1.2.114
+    "@swc/core-linux-x64-gnu": ^1.2.114
+    "@swc/core-linux-x64-musl": ^1.2.114
+    "@swc/core-win32-arm64-msvc": ^1.2.114
+    "@swc/core-win32-ia32-msvc": ^1.2.114
+    "@swc/core-win32-x64-msvc": ^1.2.114
+  dependenciesMeta:
+    "@swc/core-android-arm64":
+      optional: true
+    "@swc/core-darwin-arm64":
+      optional: true
+    "@swc/core-darwin-x64":
+      optional: true
+    "@swc/core-freebsd-x64":
+      optional: true
+    "@swc/core-linux-arm-gnueabihf":
+      optional: true
+    "@swc/core-linux-arm64-gnu":
+      optional: true
+    "@swc/core-linux-arm64-musl":
+      optional: true
+    "@swc/core-linux-x64-gnu":
+      optional: true
+    "@swc/core-linux-x64-musl":
+      optional: true
+    "@swc/core-win32-arm64-msvc":
+      optional: true
+    "@swc/core-win32-ia32-msvc":
+      optional: true
+    "@swc/core-win32-x64-msvc":
+      optional: true
+  checksum: 3715e9aecffcd7292b825f08a7c6195deeb306faa35a00d3cbc830ac300d9d9007ebc641bde3e1ecc74e5450007523629bd950b5b18f26db2722dee7a6f30e10
+  languageName: node
+  linkType: hard
+
+"@swc/core@npm:^1.2.30, @swc/core@npm:^1.2.36, @swc/core@npm:^1.2.52":
   version: 1.2.66
   resolution: "@swc/core@npm:1.2.66"
   dependencies:
@@ -2413,19 +2566,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/helpers@npm:^0.2.12":
-  version: 0.2.12
-  resolution: "@swc/helpers@npm:0.2.12"
-  checksum: 1c2f43859ab894fc5a8c14bf59c28e879f4cfd4e95dba0d540255c8939eb287637d104b3f5153cfc1601b4c5db4e1c1e1ec478b44ed1cd42299cf96369477028
+"@swc/helpers@npm:^0.2.14":
+  version: 0.2.14
+  resolution: "@swc/helpers@npm:0.2.14"
+  checksum: c7b718924ee20d64bd784b64fae9a0e228f1a7a0474e8f772e7ff89282f3e2df6a2c1325da3b98a001b1a1823c93a378886320b9ce0761dcdbcb9f76d887de45
   languageName: node
   linkType: hard
 
-"@swc/jest@npm:^0.1.2, @swc/jest@npm:^0.1.4":
+"@swc/jest@npm:^0.1.2":
   version: 0.1.4
   resolution: "@swc/jest@npm:0.1.4"
   dependencies:
     "@swc/core": ^1.2.30
   checksum: 6ec116564da41c7f1aeaed74a5eca5080bad7f4ae263cdc37d7793dd5402ea1a7c1433b01fabc8906432346f43d61da2d17cb03874db417ebf2eaa814f5f3221
+  languageName: node
+  linkType: hard
+
+"@swc/jest@npm:^0.2.11":
+  version: 0.2.11
+  resolution: "@swc/jest@npm:0.2.11"
+  dependencies:
+    "@jest/create-cache-key-function": ^27.3.1
+  peerDependencies:
+    "@swc/core": "*"
+  checksum: 7a2cb64afea1a3d2d8d233c0dd62e6040aa4898be7a3bdd36c15c35a9ab5017b8a7c8efcde4f698bdb4cf2509e3c9759f5e7db25840f4301b694dd15e5efb574
   languageName: node
   linkType: hard
 
@@ -2445,9 +2609,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:^5.11.4":
-  version: 5.14.1
-  resolution: "@testing-library/jest-dom@npm:5.14.1"
+"@testing-library/jest-dom@npm:^5.15.1":
+  version: 5.15.1
+  resolution: "@testing-library/jest-dom@npm:5.15.1"
   dependencies:
     "@babel/runtime": ^7.9.2
     "@types/testing-library__jest-dom": ^5.9.1
@@ -2458,11 +2622,11 @@ __metadata:
     dom-accessibility-api: ^0.5.6
     lodash: ^4.17.15
     redent: ^3.0.0
-  checksum: eeba37ba10be550bd9ab7dd0dda77d9011a96d9a4f75c70ed57d7bf120fe4126b251ccfb1444da1746c19773bbe4efbd96a0408f970d98c9cd1d399b2455d2c1
+  checksum: c9fba26f9a31c17143933537e16b55fdabbf065710f96f4c4be42de682651208d89361ac55bc68247610d9973ee37736f2a9911b50431d230f480b86379c2350
   languageName: node
   linkType: hard
 
-"@testing-library/react@npm:^11.1.0":
+"@testing-library/react@npm:^11.2.7":
   version: 11.2.7
   resolution: "@testing-library/react@npm:11.2.7"
   dependencies:
@@ -2475,7 +2639,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/user-event@npm:^12.1.10":
+"@testing-library/user-event@npm:^12.8.3":
   version: 12.8.3
   resolution: "@testing-library/user-event@npm:12.8.3"
   dependencies:
@@ -2616,7 +2780,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:*, @types/jest@npm:^26.0.15":
+"@types/jest@npm:*, @types/jest@npm:^26.0.24":
   version: 26.0.24
   resolution: "@types/jest@npm:26.0.24"
   dependencies:
@@ -2654,10 +2818,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^12.0.0":
-  version: 12.20.17
-  resolution: "@types/node@npm:12.20.17"
-  checksum: cb8d8afdf032392742b5f7a8de3c0ca21241310e6fcbd188d08ed5fe6f84155be6bde7b0d430585e336aa13cf57976787b6f62caf69a01e270a24085923847ce
+"@types/node@npm:^16.11.11":
+  version: 16.11.11
+  resolution: "@types/node@npm:16.11.11"
+  checksum: 1c472bd63f23ca0e4effc96e6e0c693b83b027f613a1f41b6d1bd7791f65ce171a351e0a5c92575cb59e84ad0a930875397bfbbb91a7c925ddbbb558f7461af8
   languageName: node
   linkType: hard
 
@@ -2696,16 +2860,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^17.0.0":
-  version: 17.0.9
-  resolution: "@types/react-dom@npm:17.0.9"
+"@types/react-dom@npm:^17.0.11":
+  version: 17.0.11
+  resolution: "@types/react-dom@npm:17.0.11"
   dependencies:
     "@types/react": "*"
-  checksum: b7e898e1a22643a371f58e801a3d1d8cf13a82d77063c24be73e840ef8d877ca1d04adc5db168d0dac3167dc050a26b1d70efc5fe8566a7f46a3c488a8322989
+  checksum: 4d5730dffbef86c887cecad7e3cecda424ce6a64d0b5441c63b5b015d48219868660a2bb1aa15e897e565ad8867fa6b885d4358b04e1c4e589ba4c07c3fda55c
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^17.0.0":
+"@types/react@npm:*":
   version: 17.0.15
   resolution: "@types/react@npm:17.0.15"
   dependencies:
@@ -2713,6 +2877,17 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: 4ee41e0c8d0e938f501f80ac75a5ee70b5e8cd5968a1f764960bf7b2694fd0d8ca01345f00325617130643b4af6e072bb3ade023dbc2bd2db7e73504b355b8d9
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^17.0.37":
+  version: 17.0.37
+  resolution: "@types/react@npm:17.0.37"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: e68b0d59aa69577fc6a6d654b25d5d8408625498f4c483f160b557fac21e840f6e8807cbde93e9f039949b6d624a019b1990d18499c1d65aecf3605c25e30242
   languageName: node
   linkType: hard
 
@@ -2809,6 +2984,15 @@ __metadata:
   dependencies:
     "@types/yargs-parser": "*"
   checksum: 8e358aeb8f0c3758e59e2b8fcfdee5627ab2fe3d92f50f380503d966c7f33287be3322155516a50d27727fde1ad3878f48f60cd6648439126d4b0bbb1a1153ed
+  languageName: node
+  linkType: hard
+
+"@types/yargs@npm:^16.0.0":
+  version: 16.0.4
+  resolution: "@types/yargs@npm:16.0.4"
+  dependencies:
+    "@types/yargs-parser": "*"
+  checksum: caa21d2c957592fe2184a8368c8cbe5a82a6c2e2f2893722e489f842dc5963293d2f3120bc06fe3933d60a3a0d1e2eb269649fd6b1947fe1820f8841ba611dd9
   languageName: node
   linkType: hard
 
@@ -5022,14 +5206,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-conventionalcommits@npm:4.5.0":
-  version: 4.5.0
-  resolution: "conventional-changelog-conventionalcommits@npm:4.5.0"
+"conventional-changelog-conventionalcommits@npm:4.6.1":
+  version: 4.6.1
+  resolution: "conventional-changelog-conventionalcommits@npm:4.6.1"
   dependencies:
     compare-func: ^2.0.0
     lodash: ^4.17.15
     q: ^1.5.1
-  checksum: e11944881f123f26a92e823a96e4d921b03203a312da9d539773c424103b49917f59fa717a079738f4d5b0e9709b0336ec323a86a56df7d008663b01e5f8b3b9
+  checksum: f866616c8f6f21cea005b42792451bfbd16bd4d82872867d1218f67a7993a53c5d87e26d6b483d9252e8022f2e4570e6cf9fa2a409aae5a3d73eea92ccf78b13
   languageName: node
   linkType: hard
 
@@ -5338,6 +5522,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cosmiconfig@npm:^7.0.1":
+  version: 7.0.1
+  resolution: "cosmiconfig@npm:7.0.1"
+  dependencies:
+    "@types/parse-json": ^4.0.0
+    import-fresh: ^3.2.1
+    parse-json: ^5.0.0
+    path-type: ^4.0.0
+    yaml: ^1.10.0
+  checksum: 4be63e7117955fd88333d7460e4c466a90f556df6ef34efd59034d2463484e339666c41f02b523d574a797ec61f4a91918c5b89a316db2ea2f834e0d2d09465b
+  languageName: node
+  linkType: hard
+
 "craco-swc@npm:0.1.0":
   version: 0.1.0
   resolution: "craco-swc@npm:0.1.0"
@@ -5356,12 +5553,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "craco-swc@workspace:packages/craco-swc"
   dependencies:
-    "@craco/craco": 6.2.0
-    "@swc/core": ^1.2.66
-    "@swc/helpers": ^0.2.12
-    "@swc/jest": ^0.1.4
+    "@craco/craco": 6.4.2
+    "@swc/core": ^1.2.114
+    "@swc/helpers": ^0.2.14
+    "@swc/jest": ^0.2.11
     react-scripts: 4.0.3
-    swc-loader: ^0.1.14
+    swc-loader: ^0.1.15
   peerDependencies:
     "@craco/craco": ^5.5.0 || ^6.0.0
     react-scripts: ^3.3.0 || ^4.0.0
@@ -12503,12 +12700,12 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.3.2":
-  version: 2.3.2
-  resolution: "prettier@npm:2.3.2"
+"prettier@npm:2.5.0":
+  version: 2.5.0
+  resolution: "prettier@npm:2.5.0"
   bin:
     prettier: bin-prettier.js
-  checksum: 17ce5784ac67621c292df58e2da60b2ee150c2d6aebea22a6ad9e52fcd6a5e66c349d0a8436ea3bd8ff9d778920a5f68000d7625b74f43558718a49755aa5259
+  checksum: aad1b35b73e7c14596d389d90977a83dad0db689ba5802a0ef319c357b7867f55b885db197972aa6a56c30f53088c9f8e0d7f7930ae074c275a4e9cbe091d21d
   languageName: node
   linkType: hard
 
@@ -13542,8 +13739,8 @@ resolve@^2.0.0-next.3:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    prettier: 2.3.2
-    standard-version: 9.2.0
+    prettier: 2.5.0
+    standard-version: 9.3.2
   languageName: unknown
   linkType: soft
 
@@ -14307,14 +14504,14 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"standard-version@npm:9.2.0":
-  version: 9.2.0
-  resolution: "standard-version@npm:9.2.0"
+"standard-version@npm:9.3.2":
+  version: 9.3.2
+  resolution: "standard-version@npm:9.3.2"
   dependencies:
     chalk: ^2.4.2
     conventional-changelog: 3.1.24
     conventional-changelog-config-spec: 2.1.0
-    conventional-changelog-conventionalcommits: 4.5.0
+    conventional-changelog-conventionalcommits: 4.6.1
     conventional-recommended-bump: 6.1.0
     detect-indent: ^6.0.0
     detect-newline: ^3.1.0
@@ -14328,7 +14525,7 @@ resolve@^2.0.0-next.3:
     yargs: ^16.0.0
   bin:
     standard-version: bin/cli.js
-  checksum: 7264b75acc13bd3cad097ea4e8e72076e9bfc63e5a2fd139242888321f4cd51c54da2c8eb84a6f53b6a55e49d0e586bb3e8930199672bb8c358f76c19e689c84
+  checksum: 40e1105b73e77105338a869096708e15aebf0c1104740f8cbbbb24173f55a8e7f221ff2e4cad4765c230d34094caa4e378ceb74a1ea890709c32f5fb67bd49b7
   languageName: node
   linkType: hard
 
@@ -14708,7 +14905,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"swc-loader@npm:^0.1.12, swc-loader@npm:^0.1.14":
+"swc-loader@npm:^0.1.12":
   version: 0.1.14
   resolution: "swc-loader@npm:0.1.14"
   dependencies:
@@ -14718,6 +14915,18 @@ resolve@^2.0.0-next.3:
     "@swc/core": ^1.2.52
     webpack: ">=2"
   checksum: 954cb39bf71720d5a16cca84aa8d48eda3441d9aa9a8c99b5380b81da74fcf685af3c29efeb588286a24bf761cd75f04964d594150f9c435ae37c9e249b01d58
+  languageName: node
+  linkType: hard
+
+"swc-loader@npm:^0.1.15":
+  version: 0.1.15
+  resolution: "swc-loader@npm:0.1.15"
+  dependencies:
+    loader-utils: ^2.0.0
+  peerDependencies:
+    "@swc/core": ^1.2.52
+    webpack: ">=2"
+  checksum: dd3b5893cc04abba85f7f3abbd97f4e810da5df24fe87123d4c0b4ac8559df37b59b3b044e88661e9ae52cbb111e0eb6eff02c96e243f984f26cba651eb90f15
   languageName: node
   linkType: hard
 
@@ -15212,23 +15421,23 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-typescript@^4.1.2:
-  version: 4.3.5
-  resolution: "typescript@npm:4.3.5"
+"typescript@npm:^4.5.2":
+  version: 4.5.2
+  resolution: "typescript@npm:4.5.2"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: bab033b5e2b0790dd35b77fd005df976ef80b8d84fd2c6e63cc31808151875beae9216e5a315fe7068e8499905c3c354248fe83272cdfc13b7705635f0c66c97
+  checksum: 74f9ce65d532bdf5d0214b3f60cf37992180023388c87a11ee6f838a803067ef0b63c600fa501b0deb07f989257dce1e244c9635ed79feca40bbccf6e0aa1ebc
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.1.2#~builtin<compat/typescript>":
-  version: 4.3.5
-  resolution: "typescript@patch:typescript@npm%3A4.3.5#~builtin<compat/typescript>::version=4.3.5&hash=493e53"
+"typescript@patch:typescript@^4.5.2#~builtin<compat/typescript>":
+  version: 4.5.2
+  resolution: "typescript@patch:typescript@npm%3A4.5.2#~builtin<compat/typescript>::version=4.5.2&hash=493e53"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 61fc1a2ca5037420de5bbe17c6ddc4cbcc0d52301ed94f0a7b5821c55ff9eb96307f0816f745ca8f0fc87ed92f3951cde6d97cd6fd6bc6920c02ea63b5b26259
+  checksum: 53838d56aba6fcc947d63aa0771e5d966b1b648fddafed6e221d7f38c71219c4e036ece8cfe9e35ed80cf5a35ff4eb958934c993f99c3233773ec4f9ccd53f69
   languageName: node
   linkType: hard
 
@@ -15632,7 +15841,7 @@ typescript@^4.1.2:
   languageName: node
   linkType: hard
 
-"web-vitals@npm:^1.0.1":
+"web-vitals@npm:^1.1.2":
   version: 1.1.2
   resolution: "web-vitals@npm:1.1.2"
   checksum: 92071029089277166e11141b735831d9011e85737d32c1360034676db898ab0ca95f19041ee01904f2189ad6e711b9da6b17567e4831290a429a586c98bc573f
@@ -15904,15 +16113,15 @@ typescript@^4.1.2:
   version: 0.0.0-use.local
   resolution: "with-javascript@workspace:examples/with-javascript"
   dependencies:
-    "@craco/craco": 6.2.0
-    "@testing-library/jest-dom": ^5.11.4
-    "@testing-library/react": ^11.1.0
-    "@testing-library/user-event": ^12.1.10
+    "@craco/craco": 6.4.2
+    "@testing-library/jest-dom": ^5.15.1
+    "@testing-library/react": ^11.2.7
+    "@testing-library/user-event": ^12.8.3
     craco-swc: 0.1.0
     react: ^17.0.2
     react-dom: ^17.0.2
     react-scripts: 4.0.3
-    web-vitals: ^1.0.1
+    web-vitals: ^1.1.2
   languageName: unknown
   linkType: soft
 
@@ -15920,20 +16129,20 @@ typescript@^4.1.2:
   version: 0.0.0-use.local
   resolution: "with-typescript@workspace:examples/with-typescript"
   dependencies:
-    "@craco/craco": 6.2.0
-    "@testing-library/jest-dom": ^5.11.4
-    "@testing-library/react": ^11.1.0
-    "@testing-library/user-event": ^12.1.10
-    "@types/jest": ^26.0.15
-    "@types/node": ^12.0.0
-    "@types/react": ^17.0.0
-    "@types/react-dom": ^17.0.0
+    "@craco/craco": 6.4.2
+    "@testing-library/jest-dom": ^5.15.1
+    "@testing-library/react": ^11.2.7
+    "@testing-library/user-event": ^12.8.3
+    "@types/jest": ^26.0.24
+    "@types/node": ^16.11.11
+    "@types/react": ^17.0.37
+    "@types/react-dom": ^17.0.11
     craco-swc: 0.1.0
     react: ^17.0.2
     react-dom: ^17.0.2
     react-scripts: 4.0.3
-    typescript: ^4.1.2
-    web-vitals: ^1.0.1
+    typescript: ^4.5.2
+    web-vitals: ^1.1.2
   languageName: unknown
   linkType: soft
 
