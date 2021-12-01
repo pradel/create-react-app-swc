@@ -82,10 +82,20 @@ module.exports = {
             ? {
                 syntax: 'typescript',
                 tsx: true,
+                transform: {
+                  react: {
+                    runtime: 'automatic',
+                  },
+                },
               }
             : {
                 syntax: 'ecmascript',
                 jsx: true,
+                transform: {
+                  react: {
+                    runtime: 'automatic',
+                  },
+                },
               },
         },
       }),
