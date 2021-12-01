@@ -36,11 +36,21 @@ module.exports = {
                       syntax: 'typescript',
                       tsx: true,
                       dynamicImport: true,
+                      transform: {
+                        react: {
+                          runtime: 'automatic',
+                        },
+                      },
                     }
                   : {
                       syntax: 'ecmascript',
                       jsx: true,
                       dynamicImport: true,
+                      transform: {
+                        react: {
+                          runtime: 'automatic',
+                        },
+                      },
                     },
               },
             },
