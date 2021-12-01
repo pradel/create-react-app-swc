@@ -57,11 +57,11 @@ jobs:
 
       - name: Compile create-react-app examples using craco
         run: |
-          pnpm run build --config ../../config/craco.config.js --filter "with-*"
+          pnpm run build --filter "with-*" --config ../../config/craco.config.js
 
       - name: Test create-react-app examples using craco
         run: |
-          pnpm run test --config ../../config/craco.config.js --filter "with-*"
+          pnpm run test --filter "with-*" --config ../../config/craco.config.js
 
   test:
     runs-on: ubuntu-latest
