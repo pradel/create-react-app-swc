@@ -18,17 +18,17 @@ importers:
 
   examples/with-javascript:
     specifiers:
-      '@craco/craco': 6.2.0
-      '@testing-library/jest-dom': ^5.11.4
-      '@testing-library/react': ^11.1.0
-      '@testing-library/user-event': ^12.1.10
+      '@craco/craco': 6.4.2
+      '@testing-library/jest-dom': ^5.15.1
+      '@testing-library/react': ^11.2.7
+      '@testing-library/user-event': ^12.8.3
       craco-swc: workspace:craco-swc
       react: ^17.0.2
       react-dom: ^17.0.2
       react-scripts: 4.0.3
-      web-vitals: ^1.0.1
+      web-vitals: ^1.1.2
     dependencies:
-      '@craco/craco': 6.2.0_react-scripts@4.0.3
+      '@craco/craco': 6.4.2_react-scripts@4.0.3
       '@testing-library/jest-dom': 5.15.1
       '@testing-library/react': 11.2.7_react-dom@17.0.2+react@17.0.2
       '@testing-library/user-event': 12.8.3
@@ -40,27 +40,27 @@ importers:
 
   examples/with-typescript:
     specifiers:
-      '@craco/craco': 6.2.0
-      '@testing-library/jest-dom': ^5.11.4
-      '@testing-library/react': ^11.1.0
-      '@testing-library/user-event': ^12.1.10
-      '@types/jest': ^26.0.15
-      '@types/node': ^12.0.0
-      '@types/react': ^17.0.0
-      '@types/react-dom': ^17.0.0
+      '@craco/craco': 6.4.2
+      '@testing-library/jest-dom': ^5.15.1
+      '@testing-library/react': ^11.2.7
+      '@testing-library/user-event': ^12.8.3
+      '@types/jest': ^26.0.24
+      '@types/node': ^16.11.11
+      '@types/react': ^17.0.37
+      '@types/react-dom': ^17.0.11
       craco-swc: workspace:craco-swc
       react: ^17.0.2
       react-dom: ^17.0.2
       react-scripts: 4.0.3
-      typescript: ^4.1.2
-      web-vitals: ^1.0.1
+      typescript: ^4.5.2
+      web-vitals: ^1.1.2
     dependencies:
-      '@craco/craco': 6.2.0_react-scripts@4.0.3
+      '@craco/craco': 6.4.2_react-scripts@4.0.3
       '@testing-library/jest-dom': 5.15.1
       '@testing-library/react': 11.2.7_react-dom@17.0.2+react@17.0.2
       '@testing-library/user-event': 12.8.3
       '@types/jest': 26.0.24
-      '@types/node': 12.20.37
+      '@types/node': 16.11.11
       '@types/react': 17.0.37
       '@types/react-dom': 17.0.11
       craco-swc: link:../../packages/craco-swc
@@ -72,19 +72,19 @@ importers:
 
   packages/craco-swc:
     specifiers:
-      '@craco/craco': 6.2.0
-      '@swc/core': ^1.2.66
-      '@swc/helpers': ^0.2.12
-      '@swc/jest': ^0.1.4
+      '@craco/craco': 6.4.2
+      '@swc/core': ^1.2.114
+      '@swc/helpers': ^0.2.14
+      '@swc/jest': ^0.2.11
       react-scripts: 4.0.3
-      swc-loader: ^0.1.14
+      swc-loader: ^0.1.15
     dependencies:
       '@swc/core': 1.2.115
       '@swc/helpers': 0.2.14
-      '@swc/jest': 0.1.5
+      '@swc/jest': 0.2.11_@swc+core@1.2.115
       swc-loader: 0.1.15_@swc+core@1.2.115
     devDependencies:
-      '@craco/craco': 6.2.0_react-scripts@4.0.3
+      '@craco/craco': 6.4.2_react-scripts@4.0.3
       react-scripts: 4.0.3
 
 packages:
@@ -1648,13 +1648,14 @@ packages:
       exec-sh: 0.3.6
       minimist: 1.2.5
 
-  /@craco/craco/6.2.0_react-scripts@4.0.3:
-    resolution: {integrity: sha512-kLc4GSdgR9D5JiZmSxtzbvBKcUFSJqMXImRjjYf5pacwiyAs3XfQwai7T+pExfLQNUnytgkL8jRFUJeYrkVr7g==}
+  /@craco/craco/6.4.2_react-scripts@4.0.3:
+    resolution: {integrity: sha512-egIooyvuzKM5dsvWe/U5ISyFpZwLnG9uuTF1fU4s/6b/hE8MvoxyaxKymQKgbtpfOZeH0ebtEP4cbH7xZ4XRbw==}
     engines: {node: '>=6'}
     hasBin: true
     peerDependencies:
       react-scripts: ^4.0.0
     dependencies:
+      cosmiconfig: 7.0.1
       cross-spawn: 7.0.3
       lodash: 4.17.21
       react-scripts: 4.0.3_react@17.0.2
@@ -1790,6 +1791,13 @@ packages:
       - supports-color
       - ts-node
       - utf-8-validate
+
+  /@jest/create-cache-key-function/27.4.2:
+    resolution: {integrity: sha512-aSSCAJwUNX4R1hJQoyimsND5l+2EsFgzlepS8NuOJJHjXij/UdxYFngac44tmv9IYdI+kglAyORg0plt4/aFMQ==}
+    engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
+    dependencies:
+      '@jest/types': 27.4.2
+    dev: false
 
   /@jest/environment/26.6.2:
     resolution: {integrity: sha512-nFy+fHl28zUrRsCeMB61VDThV1pVTtlEokBRgqPrcT1JNq4yRNIyTHfyht6PqtUvY9IsuLGTrbG8kPXjSZIZwA==}
@@ -2301,8 +2309,14 @@ packages:
     resolution: {integrity: sha512-wpCQMhf5p5GhNg2MmGKXzUNwxe7zRiCsmqYsamez2beP7mKPCSiu+BjZcdN95yYSzO857kr0VfQewmGpS77nqA==}
     dev: false
 
-  /@swc/jest/0.1.5:
-    resolution: {integrity: sha512-PKKaJ5wqjkpmqQjGVbZxsXn5bIFCToqS1RHg5RbZzLnBL0eOIg8cD3SsnW9d5+im8L6QAWl6pETLZE2QFYSrFA==}
+  /@swc/jest/0.2.11_@swc+core@1.2.115:
+    resolution: {integrity: sha512-2iYyhP3W6Kffs9bKHmrcALT2/SPIqfLlG8jPXvtNFvjIbapC+ChnqaqEl1rSm/iA8xk3xkhYLubohtGtNBWAmw==}
+    engines: {npm: '>= 7.0.0'}
+    peerDependencies:
+      '@swc/core': '*'
+    dependencies:
+      '@jest/create-cache-key-function': 27.4.2
+      '@swc/core': 1.2.115
     dev: false
 
   /@testing-library/dom/7.31.2:
@@ -3363,7 +3377,7 @@ packages:
   /babel-plugin-macros/2.8.0:
     resolution: {integrity: sha512-SEP5kJpfGYqYKpBrj5XU3ahw5p5GOHJ0U5ssOSQ/WBVdwkD2Dzlce95exQTs3jOVWPPKLBN2rlEWkCK7dSmLvg==}
     dependencies:
-      '@babel/runtime': 7.12.1
+      '@babel/runtime': 7.16.3
       cosmiconfig: 6.0.0
       resolve: 1.20.0
 
@@ -4354,7 +4368,7 @@ packages:
       postcss-modules-values: 3.0.0
       postcss-value-parser: 4.2.0
       schema-utils: 2.7.1
-      semver: 7.3.2
+      semver: 7.3.5
       webpack: 4.44.2
 
   /css-prefers-color-scheme/3.1.1:
@@ -5331,7 +5345,7 @@ packages:
       optionator: 0.9.1
       progress: 2.0.3
       regexpp: 3.2.0
-      semver: 7.3.2
+      semver: 7.3.5
       strip-ansi: 6.0.1
       strip-json-comments: 3.1.1
       table: 6.7.3
@@ -5747,7 +5761,7 @@ packages:
     resolution: {integrity: sha512-DUxuQaKoqfNne8iikd14SAkh5uw4+8vNifp6gmA73yYNS6ywLIWSLD/n/mBzHQRpW3J7rbATEakmiA8JvkTyZw==}
     engines: {node: '>=6.11.5', yarn: '>=1.0.0'}
     dependencies:
-      '@babel/code-frame': 7.10.4
+      '@babel/code-frame': 7.16.0
       chalk: 2.4.2
       micromatch: 3.1.10
       minimatch: 3.0.4
