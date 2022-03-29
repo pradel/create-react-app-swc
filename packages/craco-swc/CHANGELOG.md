@@ -1,5 +1,11 @@
 # craco-swc
 
+## 0.4.0
+
+### Minor Changes
+
+- [#13](https://github.com/pradel/create-react-app-swc/pull/13) [`5559703`](https://github.com/pradel/create-react-app-swc/commit/555970354cf648a12d577a0c1c98b5661543a158) Thanks [@pradel](https://github.com/pradel)! - Enable react automatic runtime by default, you don't need to import React anymore!
+
 ## 0.3.0
 
 ### Minor Changes
