@@ -72,34 +72,31 @@ module.exports = {
     const key = Object.keys(jestConfig.transform)[0];
     // TODO find a way to pass options directly to the plugin without having to use a .swcrc
     jestConfig.transform[key] = [
-      require.resolve(
-        '@swc/jest',
-        swcConfig
-          ? swcConfig
-          : {
-              sourceMaps: true,
-              jsc: {
-                target: 'es2021',
-                externalHelpers: true,
-                transform: {
-                  react: {
-                    runtime: 'automatic',
-                  },
+      require.resolve('@swc/jest'),
+      swcConfig
+        ? swcConfig
+        : {
+            sourceMaps: true,
+            jsc: {
+              target: 'es2021',
+              transform: {
+                react: {
+                  runtime: 'automatic',
                 },
-                parser: useTypeScript
-                  ? {
-                      syntax: 'typescript',
-                      tsx: true,
-                      dynamicImport: true,
-                    }
-                  : {
-                      syntax: 'ecmascript',
-                      jsx: true,
-                      dynamicImport: true,
-                    },
               },
-            }
-      ),
+              parser: useTypeScript
+                ? {
+                    syntax: 'typescript',
+                    tsx: true,
+                    dynamicImport: true,
+                  }
+                : {
+                    syntax: 'ecmascript',
+                    jsx: true,
+                    dynamicImport: true,
+                  },
+            },
+          },
     ];
 
     return jestConfig;
