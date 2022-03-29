@@ -9,8 +9,8 @@
     "src"
   ],
   "peerDependencies": {
-    "@craco/craco": "^5.5.0 || ^6.0.0",
-    "react-scripts": "^3.3.0 || ^4.0.0"
+    "@craco/craco": "^6.0.0",
+    "react-scripts": "^5.0.0"
   },
   "dependencies": {
     "@swc/core": "^1.2.114",
@@ -19,7 +19,7 @@
     "swc-loader": "^0.1.15"
   },
   "devDependencies": {
-    "@craco/craco": "6.4.2",
-    "react-scripts": "4.0.3"
+    "@craco/craco": "6.4.3",
+    "react-scripts": "5.0.0"
   }
 }
