@@ -18,10 +18,10 @@ jobs:
         with:
           version: 6.23.1
 
-      - name: Use Node.js 14
+      - name: Use Node.js 16
         uses: actions/setup-node@v2
         with:
-          node-version: 14.x
+          node-version: 16.x
           cache: 'pnpm'
 
       - name: Install dependencies
@@ -46,10 +46,10 @@ jobs:
         with:
           version: 6.23.1
 
-      - name: Use Node.js 14
+      - name: Use Node.js 16
         uses: actions/setup-node@v2
         with:
-          node-version: 14.x
+          node-version: 16.x
           cache: 'pnpm'
 
       - name: Install dependencies
@@ -73,10 +73,10 @@ jobs:
         with:
           version: 6.23.1
 
-      - name: Use Node.js 14
+      - name: Use Node.js 16
         uses: actions/setup-node@v2
         with:
-          node-version: 14.x
+          node-version: 16.x
           cache: 'pnpm'
 
       - name: Install dependencies
