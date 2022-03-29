@@ -1,5 +1,11 @@
 # craco-swc
 
+## 0.5.0
+
+### Minor Changes
+
+- [#19](https://github.com/pradel/create-react-app-swc/pull/19) [`db2a394`](https://github.com/pradel/create-react-app-swc/commit/db2a394199cbbcccc3defa3641d35f18743a3002) Thanks [@pradel](https://github.com/pradel)! - Add svgr support.
+
 ## 0.4.0
 
 ### Minor Changes
