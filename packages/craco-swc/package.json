@@ -13,13 +13,13 @@
     "react-scripts": "^3.3.0 || ^4.0.0"
   },
   "dependencies": {
-    "@swc/core": "^1.2.114",
-    "@swc/helpers": "^0.2.14",
-    "@swc/jest": "^0.2.11",
+    "@swc/core": "^1.2.161",
+    "@swc/helpers": "^0.3.8",
+    "@swc/jest": "^0.2.20",
     "swc-loader": "^0.1.15"
   },
   "devDependencies": {
-    "@craco/craco": "6.4.2",
+    "@craco/craco": "6.4.3",
     "react-scripts": "4.0.3"
   }
 }
