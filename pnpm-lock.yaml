@@ -40,17 +40,21 @@ importers:
 
   examples/with-svgr:
     specifiers:
+      '@craco/craco': 6.4.3
       '@testing-library/jest-dom': ^5.16.3
       '@testing-library/react': ^12.1.4
       '@testing-library/user-event': ^13.5.0
+      craco-swc: workspace:craco-swc
       react: ^17.0.2
       react-dom: ^17.0.2
       react-scripts: 5.0.0
       web-vitals: ^2.1.4
     dependencies:
+      '@craco/craco': 6.4.3_react-scripts@5.0.0
       '@testing-library/jest-dom': 5.16.3
       '@testing-library/react': 12.1.4_react-dom@17.0.2+react@17.0.2
       '@testing-library/user-event': 13.5.0
+      craco-swc: link:../../packages/craco-swc
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       react-scripts: 5.0.0_react@17.0.2
