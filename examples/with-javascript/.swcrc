@@ -1,6 +1,11 @@
 {
   "jsc": {
     "target": "es2015",
+    "transform": {
+      "react": {
+        "runtime": "automatic"
+      }
+    },
     "parser": {
       "syntax": "ecmascript",
       "jsx": true
