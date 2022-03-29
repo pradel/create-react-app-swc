@@ -11,6 +11,10 @@ jobs:
   test-react-scripts:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x]
+
     steps:
       - uses: actions/checkout@v2
 
@@ -18,10 +22,10 @@ jobs:
         with:
           version: 6.23.1
 
-      - name: Use Node.js 14
+      - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
-          node-version: 14.x
+          node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
 
       - name: Install dependencies
@@ -39,6 +43,10 @@ jobs:
   test-craco-empty:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x]
+
     steps:
       - uses: actions/checkout@v2
 
@@ -46,10 +54,10 @@ jobs:
         with:
           version: 6.23.1
 
-      - name: Use Node.js 14
+      - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
-          node-version: 14.x
+          node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
 
       - name: Install dependencies
@@ -66,6 +74,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x]
+
     steps:
       - uses: actions/checkout@v2
 
@@ -73,10 +85,10 @@ jobs:
         with:
           version: 6.23.1
 
-      - name: Use Node.js 14
+      - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
-          node-version: 14.x
+          node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
 
       - name: Install dependencies

@@ -1,6 +1,6 @@
 {
   "name": "craco-swc",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "src/index.js",
   "repository": "https://github.com/pradel/create-react-app-swc.git",
   "author": "Leo Pradel <pradel.leo@gmail.com>",
@@ -9,8 +9,8 @@
     "src"
   ],
   "peerDependencies": {
-    "@craco/craco": "^5.5.0 || ^6.0.0",
-    "react-scripts": "^3.3.0 || ^4.0.0"
+    "@craco/craco": "^6.0.0",
+    "react-scripts": "^5.0.0"
   },
   "dependencies": {
     "@swc/core": "^1.2.161",
@@ -20,6 +20,6 @@
   },
   "devDependencies": {
     "@craco/craco": "6.4.3",
-    "react-scripts": "4.0.3"
+    "react-scripts": "5.0.0"
   }
 }
