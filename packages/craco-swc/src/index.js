@@ -29,28 +29,23 @@ module.exports = {
             undefined
           : {
               jsc: {
-                externalHelpers: true,
                 target: 'es2015',
+                externalHelpers: true,
+                transform: {
+                  react: {
+                    runtime: 'automatic',
+                  },
+                },
                 parser: useTypeScript
                   ? {
                       syntax: 'typescript',
                       tsx: true,
                       dynamicImport: true,
-                      transform: {
-                        react: {
-                          runtime: 'automatic',
-                        },
-                      },
                     }
                   : {
                       syntax: 'ecmascript',
                       jsx: true,
                       dynamicImport: true,
-                      transform: {
-                        react: {
-                          runtime: 'automatic',
-                        },
-                      },
                     },
               },
             },
@@ -65,11 +60,7 @@ module.exports = {
   /**
    * To process the js/ts files we replace the babel-loader with the swc jest loader
    */
-  overrideJestConfig: ({
-    jestConfig,
-    pluginOptions,
-    context: { env, paths, resolve, rootDir },
-  }) => {
+  overrideJestConfig: ({ jestConfig, pluginOptions, context: { paths } }) => {
     const useTypeScript = fs.existsSync(paths.appTsConfig);
 
     // Replace babel transform with swc
@@ -80,14 +71,22 @@ module.exports = {
         sourceMaps: true,
         jsc: {
           target: 'es2021',
+          externalHelpers: true,
+          transform: {
+            react: {
+              runtime: 'automatic',
+            },
+          },
           parser: useTypeScript
             ? {
                 syntax: 'typescript',
                 tsx: true,
+                dynamicImport: true,
               }
             : {
                 syntax: 'ecmascript',
                 jsx: true,
+                dynamicImport: true,
               },
         },
       }),
