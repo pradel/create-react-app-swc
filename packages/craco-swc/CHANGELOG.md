@@ -1,5 +1,11 @@
 # craco-swc
 
+## 0.5.1
+
+### Patch Changes
+
+- [#22](https://github.com/pradel/create-react-app-swc/pull/22) [`312ba63`](https://github.com/pradel/create-react-app-swc/commit/312ba631a42071f9423c7aa049658480c422a3bc) Thanks [@pradel](https://github.com/pradel)! - Add @craco/craco 7 to peer dependencies.
+
 ## 0.5.0
 
 ### Minor Changes
