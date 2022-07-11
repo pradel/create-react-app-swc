@@ -15,10 +15,15 @@ module.exports = {
     const appSwcConfig = path.resolve(paths.appPath, '.swcrc');
     const useSwcConfig = fs.existsSync(appSwcConfig);
 
+    // add includePaths custom option, for including files/components in other folders than src
+    // Used as in addition to paths.appSrc, optional parameter.
+    const optionalIncludes =
+      (pluginOptions && pluginOptions.includePaths) || [];
+
     // add swc-loader
     addAfterLoader(webpackConfig, loaderByName('babel-loader'), {
       test: /\.(js|mjs|jsx|ts|tsx)$/,
-      include: paths.appSrc,
+      include: [paths.appSrc, ...optionalIncludes],
       loader: require.resolve('swc-loader'),
       options:
         pluginOptions && pluginOptions.swcLoaderOptions
