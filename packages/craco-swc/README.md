@@ -56,6 +56,7 @@ Take a look at https://swc.rs/docs/configuring-swc#jsc to see the list of availa
 You can also configure the options of the plugin by passing an `options` object.
 
 - `swcLoaderOptions`: customise the options passed down to the `swc` loader. _Note: This will be used only by webpack_
+- `includePaths`: include external directories in loader.
 
 For example add this configuration to your `craco.config.js` configuration file:
 
@@ -68,6 +69,7 @@ module.exports = {
     {
       plugin: CracoSwcPlugin,
       options: {
+        includePaths: ['/external/dir/with/components'], // Optional. If you want to include components which are not in src folder
         swcLoaderOptions: {
           jsc: {
             externalHelpers: true,
